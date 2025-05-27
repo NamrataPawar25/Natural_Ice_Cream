@@ -164,7 +164,7 @@ nav {
 .ProductImg {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -703,4 +703,35 @@ div.form-row {
 .FranchaiseBTN{
     display: flex;
     justify-content: center;
+}
+
+@media screen and  (max-width: 576px){
+    .rightDiv{
+        margin:20px;
+    }
+    nav{
+        margin-top: 50px;
+    }
+    .navList {
+        flex-direction: column;
+    }
+    .OriginalProduct{
+        flex-direction: column;
+    }
+    .ProductDiv{
+        width: 100%;
+    }
+    .card{
+        width: 40%;
+    }
+    .Footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Mainheader{
+        flex-direction: column;
+    }
+    iframe{
+        width: 50%;
+    }
 }
